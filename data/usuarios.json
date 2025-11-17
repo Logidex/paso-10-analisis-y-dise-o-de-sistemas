@@ -1,0 +1,28 @@
+{
+  "usuarios": [
+    {
+      "idCliente": 1001,
+      "nombreCompleto": "Juan Pérez",
+      "correo": "juan.perez@techsolutions.com",
+      "telefono": "809-465-1122",
+      "direccion": "Av. 27 de Febrero #101, Santo Domingo",
+      "compania": "TechSolutions S.R.L.",
+      "tipoCliente": "CORPORATIVO",
+      "estadoCuenta": "ACTIVA",
+      "saldoMillas": 1500,
+      "password": "demo123"
+    },
+    {
+      "idCliente": 1002,
+      "nombreCompleto": "María Gonzalez",
+      "correo": "maria.gonzalez@email.com",
+      "telefono": "809-221-5599",
+      "direccion": "Calle Del Sol #50, Santiago",
+      "compania": null,
+      "tipoCliente": "MINORISTA",
+      "estadoCuenta": "ACTIVA",
+      "saldoMillas": 0,
+      "password": "demo123"
+    }
+  ]
+}

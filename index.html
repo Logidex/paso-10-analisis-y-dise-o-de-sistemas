@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Reservación de Vuelos - Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.3/dist/sweetalert2.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="index.html" style="text-decoration: none; color: white;"><h1>✈️ AeroReservas SysTeam</h1></a>
+            <div class="navbar-links">
+                <a href="index.html">Inicio</a>
+                <a href="login.html">Iniciar Sesión</a>
+                <a href="registro.html">Registrarse</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="container">
+        <!-- Sección de bienvenida -->
+        <div class="card text-center">
+            <h2>Bienvenido al Sistema de Reservación de Vuelos</h2>
+            <p>Encuentra y reserva vuelos a los mejores destinos del mundo</p>
+        </div>
+
+        <!-- Filtros de búsqueda -->
+        <div class="card">
+            <h3 class="card-header">Buscar Vuelos</h3>
+            <div style="display: grid; grid-template-columns: 1fr 1fr auto auto; gap: 15px; align-items: end;">
+                <div class="form-group">
+                    <label for="filtro-destino">Destino</label>
+                    <input type="text" id="filtro-destino" placeholder="Ej: Miami, Nueva York...">
+                </div>
+                <div class="form-group">
+                    <label for="filtro-fecha">Fecha de salida</label>
+                    <input type="date" id="filtro-fecha">
+                </div>
+                <button class="btn btn-primary" onclick="filtrarVuelos()">
+                    🔍 Buscar
+                </button>
+                <button class="btn btn-outline" onclick="limpiarFiltros()">
+                    🔄 Limpiar
+                </button>
+            </div>
+        </div>
+
+        <!-- Lista de vuelos disponibles -->
+        <h2 class="mt-20 mb-20">Vuelos Disponibles</h2>
+        <div id="lista-vuelos" class="vuelos-grid">
+            <!-- Los vuelos se cargarán dinámicamente aquí -->
+        </div>
+    </div>
+
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.3/dist/sweetalert2.all.min.js"></script>
+    
+    <script src="js/main.js"></script>
+    <script src="js/vuelos.js"></script>
+</body>
+</html>

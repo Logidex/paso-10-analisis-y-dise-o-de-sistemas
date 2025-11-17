@@ -1,0 +1,13 @@
+{
+  "agentes": [
+    {
+      "idAgente": 1,
+      "nombre": "Laura Martinez",
+      "correo": "laura.martinez@aerolinea.com",
+      "telefono": "809-225-2300",
+      "sucursal": "Aeropuerto Las Américas",
+      "estado": "ACTIVO",
+      "password": "agente123"
+    }
+  ]
+}
